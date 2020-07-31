@@ -1,0 +1,19 @@
+<html>
+  <head>
+<title>Resposta questão 4</title>
+</head>
+<body>
+<div id="valores">
+<p>Primeiro texto</p>
+<p>Segundo texto</p>
+</div>
+<input type="text" id="valorinput" placeholder="Escreva um texto aqui"/>
+<button onclick="mudarvalor()">Resultado</button>
+<script>
+function mudarvalor(){
+  var x = document.querySelector("div > p");
+x.innerHTML = document.getElementById("valorinput").value;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+  <head>
+<title>Resposta questão 5</title>
+</head>
+<body>
+<ul id="minhalista">
+	<li>Primeiro elemento da lista</li>
+	<li>Segundo elemento da lista</li>
+	<li>Terceiro elemento da lista</li>
+</ul>
+<button onclick="addelemento()">Resultado</button>
+<script>
+function addelemento(){
+  var lista = document.createElement("LI");
+  var valorlista = document.createTextNode("Mais um elemento da lista");
+  lista.appendChild(valorlista);
+  document.getElementById("minhalista").appendChild(lista);
+}
+</script>
+</body>
+</html>

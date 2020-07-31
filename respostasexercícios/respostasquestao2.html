@@ -1,0 +1,21 @@
+<html>
+  <head>
+<title>Resposta questão 2</title>
+</head>
+<body>
+<p class="teste">Primeiro elemento P</p>
+<p class="teste">Segundo elemento P</p>
+<p class="teste">Terceiro elemento P</p>
+<button onclick="listarelementos()">Resultado</button>
+<script>
+function listarelementos(){
+let i = 0;
+let x = document.getElementsByClassName("teste");
+while(i < x.length){
+console.log(x[i].innerHTML);
+i++
+}
+}
+</script>
+</body>
+</html>
